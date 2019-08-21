@@ -1,0 +1,131 @@
+level 0 SHOULD NOT FAIL
+    aff_a
+        -not like aff_a, because if there isn't an a or is a blank then it shouldnt dispaly an a
+    countdown
+        -write numbers 9 to 0 with a new line 
+    printnumbers
+        -write numbers 0 to 9 without a new line
+    hello
+    maff_alpha
+    aff_first_param
+    aff_last_param
+    only_a
+    only_z
+    aff_z
+
+level 1
+    strcpy
+        -copies from the s2 to s1 and includes a terminating null character
+        -tips
+            -make sure when testing that we use char variables and not string literals
+            -know the difference between string literal and char pointers, THEY ARE DIFFERENT
+        -string literal names are reassignable, that point to the "adfadf" which is in the read
+        only section of memory
+    strlen
+        -just a while loop with an i counter
+    repeat_alpha
+        -it's just a loop through the word and funnel into a function that returns the
+        number to repeat that is a series of if statements to determine where on the alphabet
+        it lands depending on if its lower or upper case
+    ulstr
+        -tips
+            -make sure to check the z's and non numbers
+    rot_13
+    first_word
+        -loop though spaces and tabs
+        -then print until it hits null, space, or tabs
+    putstr
+    swap
+        -swaps the content of 2 integers
+        -this is unique because we can pass the address of 2 integers and swap them in function
+        and it would change in their repective lower function
+            -REMEMBER THIS TO USE FOR LATER
+    first_word
+    rev_print
+    rotone
+
+level 2
+    atoi
+        -need to skip (t, v, n, r, f, and ' ')
+            -simpler to do 32 (whitespace) || s > =9(horizontal tab) s <= 13(carriage return/ enterkey)
+        -then find the sign
+        -then loop though the str and convert it into an int by subtracting '0' and multiply the
+        current by 10 plus add it
+        -remember to handle both positive and negative
+    ft_strdup
+        -make an duplicate of the string passed into it
+        -malloc the memory space(+1 for null) and then copy it over and return it
+        -check if malloc fails and if it does return NULL
+        -you can malloc and set the pointer to it and test it for failure if it doesnt malloc 
+    inter
+    last_word
+        -go to the end of the string
+        -go backwards and subtract the blanks
+        -go back until it hits a blank
+        -go forwards and print until it hits a blank
+    reverse_bits
+        -swap the bits go from the 00000000 7 zeros and 1 and combine it with 
+        7 - 1 zero 000000 11
+        -the key to this one is knowing bitwise functions
+            -& operators
+                -this is the BITWISE and function, it taks 2 units of something and it assigns 1 if both bits are 1
+            -| or 
+                -this is BITWISE or function, it results 1 bit if either one bit is 1
+            -^
+                -this is the XOR function, it only shows if the 2 bits compared are not the same
+            - >> or << shifts the bits
+    swap_bits
+        -swap the bits of unsigned char so move it 4 to left and 4 to the right and comine it with |
+    union
+        -build a fuction that takes a char, a string, and an index number
+        -the function would parse through the string and check if the char is in the index -1 of the string
+    alpha_mirror
+        -1 tip
+            -'Z' - c + 'A';
+    max
+        -trick to this one is what to intialize the max value as in case it isn't above 0
+    wdmatch
+    do_op
+    print_bits
+    ft_strcmp
+    ft_strrev
+    is_power_of_2
+
+level 3
+    addprimesum
+    epurstr
+    ftlistsize
+    rrange
+    hidenp
+    pgcd
+    printhex
+    rstrcapitalizer
+    expandstr
+    lcm
+    tabmult
+    atoibase
+    rrangeparamsum
+    capitalizer
+
+level 4
+    ftlistremoveif
+    sortlist
+    itoa
+    checkmate
+    itoabase
+    brainfuck
+    floodfill
+    listforeach
+    split
+    revwstr
+    rostring
+    sortinttab
+
+level 5
+    printmemory
+    brackets
+    rpncalc
+    options
+    biggestpal
+    cycledetector
+    itoabase
